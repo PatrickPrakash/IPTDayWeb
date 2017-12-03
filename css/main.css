@@ -7,9 +7,9 @@
             src : url("fonts/GothamRoundedMedium_21022.ttf")
         }
             body {
-                        font-family: sans-serif;
-                        background-image: url(images/bg.jpg);
-                
+                        font-family: "Gotham Rounded";
+                        background-image: url(images/bg1.jpg);
+                        
                  }
             .main {
                     padding: 0em 0 1em;
