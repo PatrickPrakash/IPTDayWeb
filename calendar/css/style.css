@@ -26,10 +26,16 @@ a{text-decoration:none;}
 nav.vertical ul li{	display:block;}/* vertical menu */
 nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
 img{max-width:100%;}
+   @font-face
+        {
+            font-family: "Gotham Rounded";
+            src : url("fonts/GothamRoundedMedium_21022.ttf");
+        }
+          
 /*--end reset--*/
 body {
-    font-family: 'Roboto Condensed', sans-serif;
-    background: url(../images/1.png)repeat #22655c 0px 0px;
+    font-family: "Gotham Rounded";
+    background-image: url(images/bg1.jpg);
     background-attachment: fixed;
 	background-size: 85%;
 }
@@ -38,7 +44,7 @@ h1 {
     text-align: center;
     color: #fff;
     font-weight: 100;
-	font-family: 'Arima Madurai', cursive;
+	font-family: "Gotham Rounded";
 }
 /*-- calendar --*/ 
 .main-agileits-w3layouts {
@@ -87,14 +93,14 @@ h1 {
     font-weight: 300;
     font-size: 18px;
     display: inline-block;
-    font-family: 'Arima Madurai', cursive;
+    font-family: "Gotham Rounded";
 }
 .w3ls-header h3 {
     font-size: 21px;
     font-weight: 700;
     color: #ff5722;
     display: inline-block;
-    font-family: 'Arima Madurai', cursive;
+    font-family: "Gotham Rounded";
     margin-left: 10px;
 }
 
