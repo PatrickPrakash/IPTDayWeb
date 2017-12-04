@@ -78,7 +78,7 @@ h1 {
     background: #fff;
     padding: 1em;
     position: relative;
-    border-top: 5px solid #FF5722;
+    border-top: 5px solid #0066ff;
     text-align: center;
 }
 
@@ -98,7 +98,7 @@ h1 {
 .w3ls-header h3 {
     font-size: 21px;
     font-weight: 700;
-    color: #ff5722;
+    color: #0066ff;
     display: inline-block;
     font-family: "Gotham Rounded";
     margin-left: 10px;
@@ -127,7 +127,7 @@ h1 {
 }
 .w3ls-header nav span:before {
 	font-family: 'fontawesome-selected';
-	color: #FF5722; 
+	color: #0066ff; 
 	text-align: center; 
 	-webkit-transition: 0.5s all;
 	-moz-transition: 0.5s all;
@@ -175,7 +175,7 @@ h1 {
     width: 20px;
     height: 20px;
     text-align: center;
-    background: #FF5722;
+    background: #0066ff;
     cursor: pointer;
     line-height: 15px;
     padding: 0;
@@ -200,7 +200,7 @@ h1 {
     padding: 20px 35px;
     background: #fff;
     border-bottom: 1px solid #ddd;
-    border-top: 5px solid #FF5722;
+    border-top: 5px solid #0066ff;
     -webkit-box-shadow: 0 1px rgba(255,255,255,0.9);
     box-shadow: 0 1px rgba(255,255,255,0.9);
     -moz-box-shadow: 0 1px rgba(255,255,255,0.9);
@@ -210,7 +210,7 @@ h1 {
 	color: #888;
 }
 .custom-content-reveal a {
-	color: #FF5722;
+	color: #0066ff;
 }
 .custom-content-reveal a:hover {
 	color: #333;
@@ -255,7 +255,7 @@ h1 {
 }
 
 .fc-calendar .fc-row > div.fc-content:hover:after{
-	color: #FF5722;
+	color: #0066ff;
 }
 
 .fc-calendar .fc-row > div.fc-today.fc-content:hover:after{
@@ -288,7 +288,7 @@ h1 {
 	line-height:1.8em;
 }
 .w3-agile-copyright p a{
-    color: #ff5722; 
+    color: #0066ff; 
 	-webkit-transition: 0.5s all;
 	-moz-transition: 0.5s all;
 	-o-transition: 0.5s all;
