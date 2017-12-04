@@ -33,9 +33,14 @@ img{max-width:100%;}
         }
           
 /*--end reset--*/
+html
+{
+    background-image: url(images/bg1.jpg);
+}
+
 body {
     font-family: "Gotham Rounded";
-    background-image: url(images/bg1.jpg);
+    backgrou/nd-image: url(images/bg1.jpg);
     background-attachment: fixed;
 	background-size: 85%;
 }
