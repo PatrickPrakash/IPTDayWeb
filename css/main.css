@@ -92,7 +92,7 @@
     text-align: left;
 }
 .events-text a:hover {
-    color: #9C56B8;
+    color: #4e76fc;
 }
 .point {
     display: inline-block;
@@ -103,7 +103,7 @@
     border-right: 4px solid\9;
     border-top: 4px solid transparent;
     border-bottom: 4px solid transparent;
-    color: #9C56B8;
+    color: #4e76fc;
 }
 .events-bottom {
     border-top: 1px solid #E4E4E4;
@@ -117,7 +117,7 @@
 }
 .events-bottom button.btn ,.more button.btn{
     float: right;
-    background-color: #9C56B8;
+    background-color: #4e76fc;
     border: none;
     font-size: 0.9em;
     padding: .5em 1em;
@@ -125,10 +125,13 @@
     cursor: pointer;
     outline: none;
 	position: relative;
-	font-family: 'Merienda One', cursive;
+	font-family: "Gotham Rounded";
 }
 .btn.showLink, .btn.hideLink {
 	text-decoration: none;
+}
+.more {
+	display: none;
 }
 .copyright {
     font-family: 'Gotham Rounded';
@@ -140,3 +143,4 @@
     color: #fff;
     line-height: 1.8em;
 }
+
