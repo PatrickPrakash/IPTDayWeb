@@ -103,7 +103,7 @@
     border-right: 4px solid\9;
     border-top: 4px solid transparent;
     border-bottom: 4px solid transparent;
-    color: #4e76fc;
+    color: #146eff;
 }
 .events-bottom {
     border-top: 1px solid #E4E4E4;
@@ -117,7 +117,8 @@
 }
 .events-bottom button.btn ,.more button.btn{
     float: right;
-    background-color: #4e76fc;
+    background-color: #146eff;
+    border-radius: 25px;
     border: none;
     font-size: 0.9em;
     padding: .5em 1em;
@@ -126,6 +127,21 @@
     outline: none;
 	position: relative;
 	font-family: "Gotham Rounded";
+}
+.viewcal{
+    background-color: #146eff;
+    border: none;
+    border-radius: 25px;
+    font-family: "Gotham Rounded";
+    color: #fff;
+    cursor: pointer;
+    height:31px;
+    width:132px;
+    font-size: 0.9em;    
+}
+.centerb
+{
+    text-align: center;
 }
 .btn.showLink, .btn.hideLink {
 	text-decoration: none;

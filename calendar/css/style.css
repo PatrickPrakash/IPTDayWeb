@@ -40,7 +40,6 @@ html
 
 body {
     font-family: "Gotham Rounded";
-    backgrou/nd-image: url(images/bg1.jpg);
     background-attachment: fixed;
 	background-size: 85%;
 }

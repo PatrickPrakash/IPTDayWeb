@@ -11,6 +11,7 @@ and open the template in the editor.
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta charset="UTF-8">
 <link rel="stylesheet" href="css/main.css">
+<script src="js/day.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
@@ -37,30 +38,16 @@ and open the template in the editor.
 			</div>
 <div class="events-bottom">
 	<button type="button" id="events-show" class="showLink btn" onclick="showHide('events');return false;"> Show all </button>
-	<div class="clear"> </div>
 </div>
 			</div>
+			
 		</div>
-	<div>
-<a href="calendar/index.html">Button</a>
-</div>
+		<div class="centerb">
+		    <input type="button" class="viewcal"  onclick="location.href='calendar/index.html';" value="Show Calendar" />
+		</div>
 <div class="copyright">
 <p> © 2017 Day System . All rights reserved  </p>
 </div>
 </div>
-<script language="javascript" type="text/javascript">
-		function showHide(shID) {
-		   if (document.getElementById(shID)) {
-			  if (document.getElementById(shID+'-show').style.display !== 'none') {
-				 document.getElementById(shID+'-show').style.display = 'none';
-				 document.getElementById(shID).style.display = 'block';
-			  }
-			  else {
-				 document.getElementById(shID+'-show').style.display = 'inline';
-				 document.getElementById(shID).style.display = 'none';
-			  }
-		   }
-		}
-	</script>
 </body>
 </html>
