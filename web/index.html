@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" href="css/monthly.css">
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!--fonts--> 
+<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Cabin:400,500,600,700" rel="stylesheet">
+    </head>
+    <body>
+       <!-- calendar -->
+        <div class="w3l-calendar-left w3-agile-width">
+	<div class="calendar-heading">
+        </div>
+            <div class="monthly" id="mycalendar"></div>
+        </div>
+       <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/monthly.js"></script>
+	<script type="text/javascript">
+		$(window).load( function() {
+
+			$('#mycalendar').monthly({
+				mode: 'event',
+				
+			});
+
+			$('#mycalendar2').monthly({
+				mode: 'picker',
+				target: '#mytarget',
+				setWidth: '250px',
+				startHidden: true,
+				showTrigger: '#mytarget',
+				stylePast: true,
+				disablePast: true
+			});
+
+		switch(window.location.protocol) {
+		case 'http:':
+		case 'https:':
+		// running on a server, should be good.
+		break;
+		case 'file:':
+		alert('Just a heads-up, events will not work when run locally.');
+		}
+
+		});
+	</script>
+	<!-- //calendar -->
+    </body>
+</html>
