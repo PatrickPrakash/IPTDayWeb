@@ -5,10 +5,9 @@ var events = {
 	'12-25-2016' : [{content: 'Christmas Day', repeat: 'YEARLY', allDay: true, endDate: '12-25-2100'}],
 	'01-01-2016' : [{content: 'New Year\'s', repeat: 'YEARLY', allDay: true, endDate: '12-31-2100'}],
 	'01-01-2016' : [{content: 'Yeah Monthly', repeat: 'MONTHLY', allDay: true, endDate: '07-02-2015'}],
-	'01-07-2016' : [{content: 'Dummy Text', repeat: 'MONTHLY', allDay: true, endDate: '02-07-2100'}],
-	'01-15-2016' : [{content: 'Lorem Ipsum was popularised', repeat: 'MONTHLY', allDay: true, endDate: '02-07-2100'}],
 	'03-02-2016' : [{content : 'Graduation Exams', repeat: 'INTERVAL', allDay: true, endDate: '03-20-2015'}],
-	'01-01-2016' : [{content : 'MONDAY (WEEKLY)', repeat: 'MON', allDay: true, endDate:'01-01-2100'}]
+	'01-01-2016' : [{content : 'MONDAY (WEEKLY)', repeat: 'MON', allDay: true, endDate:'01-01-2100'}],
+    '12-05-2017' : [{content : 'Project Starts',  allDay: true,}]
 },
 t = new Date(),
 //Creation of today event
