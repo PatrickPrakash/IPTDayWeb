@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -14,11 +14,12 @@ and open the template in the editor.
 <script src="js/day.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 </head>
 <body>
-<h1>Today's Day</h1>
+<h1 class="head">Today's Day</h1>
 	<div class="main">
-		<div class="events-info">
+		<div class="events-info  col-md-3">
 			<div class="events-main">
 				<div class="slide-text">
 				<h2>2</h2>
@@ -43,7 +44,7 @@ and open the template in the editor.
 			
 		</div>
 		<div class="centerb">
-		    <input type="button" class="viewcal"  onclick="location.href='calendar/index.html';" value="Show Calendar" />
+		    <input type="button" class="viewcal"  onclick="location.href='calendar/index.php';" value="Show Calendar" />
 		</div>
 <div class="copyright">
 <p> © 2017 Day System . All rights reserved  </p>
