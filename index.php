@@ -17,13 +17,13 @@ and open the template in the editor.
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 </head>
 <body>
-<h1 class="head">Today's Day</h1>
+<h1 class="hh">Today's Day</h1>
 	<div class="main">
-		<div class="events-info  col-md-3">
+		<div class="events-info  col-md-3 col-centered col-lg-3 col-xs-3  container">
 			<div class="events-main">
 				<div class="slide-text">
 				<h2>2</h2>
-<ul>
+                    <ul class="list">
                             <li style="float: left">Week No : 4</li>
                             <li style="float: right">Date: 2017-12-06</li>
                         </ul>

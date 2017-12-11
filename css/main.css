@@ -4,7 +4,7 @@
             @font-face
         {
             font-family: "Gotham Rounded";
-            src : url("fonts/GothamRoundedMedium_21022.ttf")
+            src : url(fonts/GothamRoundedMedium_21022.ttf) format("truetype");
         }
             body {
                         font-family: "Gotham Rounded";
@@ -14,14 +14,20 @@
             .main {
                     padding: 0em 0 1em;
                   }
-            .head {
+
+            .hh {
                         font-family: 'Gotham Rounded';
                         font-size: 2em;
                         text-align: center;
                         color: #fff;
                         margin-top: 1em;
                }
-           
+
+            .list {
+                        
+                    font-family: 'Gotham Rounded';
+               }
+
             .events-info {
     width: 25%;           
     margin: 3em auto; 
@@ -87,12 +93,9 @@
 .events-text a {
     display: block;
     font-size: 1em;
-    color: #555;
+    color: #000000;
     margin-top: 1em;
     text-align: left;
-}
-.events-text a:hover {
-    color: #4e76fc;
 }
 .point {
     display: inline-block;
@@ -159,5 +162,9 @@
        font-size: 0.95em;
     color: #fff;
     line-height: 1.8em;
+}
+.copyright:before {
+    content: '\A';
+    white-space: pre;
 }
 ul{list-style:none;margin:0px;padding:0px;font-size: 1em;font-family: sans-serif;color: black;}
