@@ -6,10 +6,11 @@ var events = {
 	'01-01-2016' : [{content: 'New Year\'s', repeat: 'YEARLY', allDay: true, endDate: '12-31-2100'}],
 	'01-01-2016' : [{content: 'Yeah Monthly', repeat: 'MONTHLY', allDay: true, endDate: '07-02-2015'}],
 	'03-02-2016' : [{content : 'Graduation Exams', repeat: 'INTERVAL', allDay: true, endDate: '03-20-2015'}],
-	'01-01-2016' : [{content : 'MONDAY (WEEKLY)', repeat: 'MON', allDay: true, endDate:'01-01-2100'}],
+	//'01-01-2016' : [{content : 'MONDAY (WEEKLY)', repeat: 'MON', allDay: true, endDate:'01-01-2100'}],
     '12-05-2017' : [{content : 'Project Starts',  allDay: true,}]
-},
-t = new Date(),
+}
+//,
+//t = new Date(),
 //Creation of today event
-today = ((t.getMonth() + 1) < 10 ? '0' + (t.getMonth() + 1) : (t.getMonth() + 1)) + '-' + (t.getDate() < 10 ? '0' + t.getDate() : t.getDate()) + '-' +t.getFullYear();
-events[today] = [{content: 'TODAY', allDay: true}];
+//today = ((t.getMonth() + 1) < 10 ? '0' + (t.getMonth() + 1) : (t.getMonth() + 1)) + '-' + (t.getDate() < 10 ? '0' + t.getDate() : t.getDate()) + '-' +t.getFullYear();
+//events[today] = [{content: 'TODAY', allDay: true}];
