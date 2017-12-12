@@ -97,6 +97,13 @@
     margin-top: 1em;
     text-align: left;
 }
+.events-text1 {
+    display: block;
+    font-size: 1em;
+    color: ;
+    margin-bottom: 1em;
+    text-align: left;
+}
 .point {
     display: inline-block;
     width: 0;
