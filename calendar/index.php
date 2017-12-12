@@ -10,7 +10,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <title>IPTDay</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Effective Calendar template Responsive, Login form web template,Flat Pricing tables,Flat Drop downs  Sign up Web Templates, Flat Web Templates, Login sign up Responsive web template, SmartPhone Compatible web template, free web designs for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- Custom Theme files -->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -24,6 +23,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- //web font --> 
 </head>
 <body class="animated slideInUp">
+<?php include 'connection.php';?>
 	<!-- main -->
 	<div class="main-agileits-w3layouts">
 		<h1>Calendar</h1>
