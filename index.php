@@ -27,6 +27,25 @@ if ($result->num_rows > 0) {
 } else {
     echo "0 results";
 }
+$sql = "SELECT DAY FROM DAY_STATUS_TBL WHERE DATEE = '$next_date'";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+ while($row = $result->fetch_assoc()) {
+ $next_day = $row["DAY"] ;
+  }
+} else {
+    echo "0 results";
+}
+$sql = "SELECT DAY FROM DAY_STATUS_TBL WHERE DATEE = '$next_date1'";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+ while($row = $result->fetch_assoc()) {
+ $next_day1 = $row["DAY"] ;
+  }
+} else {
+    echo "0 results";
+}
+
 $conn->close();
 ?>
 <h1 class="hh">Today's Day</h1>
@@ -40,6 +59,12 @@ $conn->close();
                             <li style="float: right"><?php echo "$today"; ?></li>
                         </ul>
 			</div>
+<div class="events-text1"><ul>
+                            <li style="float: left"><?php echo"$next_date";?></li>
+                            <li style="float: right">Day: <?php echo"$next_day"; ?></li><br/>
+<p><li style="float: left"><?php echo"$next_date1";?></li>
+                            <li style="float: right">Day: <?php echo"$next_day1"; ?></li><br/></p>
+                        </ul></div>
 			<div class="events-text">
 			<span class="point"></span> Working days till today : 2 <br><br>
 				<div class="more" id="events">
