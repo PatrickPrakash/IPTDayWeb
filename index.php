@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
 <head>
 <title>Day</title>
@@ -17,15 +12,32 @@ and open the template in the editor.
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 </head>
 <body>
+<? include("connection.php");
+?>
+<?php
+$today=date('Y-m-d');
+$next_date =date('Y-m-d', strtotime($today .' +1 day'));
+$next_date1 =date('Y-m-d', strtotime($today .' +2 day'));
+$sql = "SELECT DAY FROM DAY_STATUS_TBL WHERE DATEE = '$today'";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+ while($row = $result->fetch_assoc()) {
+ $day = $row["DAY"] ;
+  }
+} else {
+    echo "0 results";
+}
+$conn->close();
+?>
 <h1 class="hh">Today's Day</h1>
 	<div class="main">
 		<div class="events-info  col-md-3 col-centered col-lg-3 col-xs-3  container">
 			<div class="events-main">
 				<div class="slide-text">
-				<h2>2</h2>
+				<h2><?php echo "$day"; ?></h2>
                     <ul class="list">
                             <li style="float: left">Week No : 4</li>
-                            <li style="float: right">Date: 2017-12-06</li>
+                            <li style="float: right"><?php echo "$today"; ?></li>
                         </ul>
 			</div>
 			<div class="events-text">
