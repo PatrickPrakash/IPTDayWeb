@@ -45,6 +45,17 @@ if ($result->num_rows > 0) {
 } else {
     echo "0 results";
 }
+$sql="SELECT count(*) as strike from DAY_STATUS_TBL where datee <= '$startworkingday' and datee >='$lastworkingday' and day =7 ";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0)
+    {
+    	$row = $result->fetch_assoc();
+    	$strikedays=$row ['strike'];
+    }
+    else
+    {
+    	$strikedays=0;
+    }
 
 $conn->close();
 ?>
@@ -70,7 +81,7 @@ $conn->close();
 				<div class="more" id="events">
 					<span class="point"></span> Remaining working days : 2<br><br>
 					<span class="point"></span> Total working days : 2 <br><br>
-					<span class="point"></span> Strikes : 2 <br>
+					<span class="point"></span> Strikes : <?php echo"$strikedays"; ?> <br>
 						<button type="button" id="events-hide" class="showLink btn btn1" onclick="showHide('events');return false;"> Less </button>
 				</div>
 			</div>
