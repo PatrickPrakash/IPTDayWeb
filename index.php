@@ -97,7 +97,6 @@ $conn->close();
 				<div class="slide-text">
 				<h2><?php echo "$day"; ?></h2>
                     <ul class="list">
-                            <li style="float: left">Week No : 4</li>
                             <li style="float: right"><?php echo "$today"; ?></li>
                         </ul>
 			</div>
