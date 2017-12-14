@@ -45,6 +45,21 @@ if ($result->num_rows > 0) {
 } else {
     echo "0 results";
 }
+$sql="SELECT max(SEM_STARTDATE) as startwday from SEMESTER_DURATION";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0)
+    {
+        while($row = $result->fetch_assoc()){
+        $startworkingday=$row ['startwday'];
+        }
+    }
+$sql="SELECT max(SEM_ENDDATE) as lastwday from SEMESTER_DURATION";
+	$result = $conn->query($sql);
+	if ($result->num_rows > 0)
+	{
+	$row = $result->fetch_assoc();
+	$lastworkingday=$row ['lastwday'];
+	}
 $sql="SELECT count(*) as strike from DAY_STATUS_TBL where datee <= '$startworkingday' and datee >='$lastworkingday' and day =7 ";
     $result = $conn->query($sql);
     if ($result->num_rows > 0)
@@ -56,6 +71,11 @@ $sql="SELECT count(*) as strike from DAY_STATUS_TBL where datee <= '$startworkin
     {
     	$strikedays=0;
     }
+$sql="SELECT count(*) as total from DAY_STATUS_TBL  where datee >'$today' and datee <= '$lastworkingday' and day between 1 and 5 ";
+    $result = $conn->query($sql);
+    $row = $result->fetch_assoc();
+    $totalexpected=$row ['total'];
+$grosstotal=$totaltilltoday+$totalexpected;
 
 $conn->close();
 ?>
@@ -77,10 +97,10 @@ $conn->close();
                             <li style="float: right">Day: <?php echo"$next_day1"; ?></li><br/></p>
                         </ul></div>
 			<div class="events-text">
-			<span class="point"></span> Working days till today : 2 <br><br>
+			<span class="point"></span> Working days till today (<?php echo "$today"; ?>) : <?php echo"$totaltilltoday"; ?> <br><br>
 				<div class="more" id="events">
-					<span class="point"></span> Remaining working days : 2<br><br>
-					<span class="point"></span> Total working days : 2 <br><br>
+					<span class="point"></span> Remaining working days till <?php echo"$lastworkingday"; ?>: <?php echo "$totalexpected"; ?><br><br>
+					<span class="point"></span> Total working days till <?php echo"$lastworkingday"; ?> : <?php echo"$grosstotal"; ?> <br><br>
 					<span class="point"></span> Strikes : <?php echo"$strikedays"; ?> <br>
 						<button type="button" id="events-hide" class="showLink btn btn1" onclick="showHide('events');return false;"> Less </button>
 				</div>
