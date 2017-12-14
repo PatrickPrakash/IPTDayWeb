@@ -71,6 +71,17 @@ $sql="SELECT count(*) as strike from DAY_STATUS_TBL where datee <= '$startworkin
     {
     	$strikedays=0;
     }
+$sql="SELECT count(*) as total from DAY_STATUS_TBL where datee <= '$today' and datee >='$startworkingday' and day between 0 and 6 ";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0)
+    {
+    	$row = $result->fetch_assoc();
+    	$totaltilltoday=$row ['total'];
+    }
+    else
+    {
+    	$totaltilltoday=0;
+    }
 $sql="SELECT count(*) as total from DAY_STATUS_TBL  where datee >'$today' and datee <= '$lastworkingday' and day between 1 and 5 ";
     $result = $conn->query($sql);
     $row = $result->fetch_assoc();
