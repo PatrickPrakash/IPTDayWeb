@@ -107,7 +107,7 @@ $conn->close();
                             <li style="float: right">Day: <?php echo"$next_day1"; ?></li><br/></p>
                         </ul></div>
 			<div class="events-text">
-			<span class="point"></span> Working days till today (<?php echo "$today"; ?>) : <?php echo"$totaltilltoday"; ?> <br><br>
+			<span class="point"></span> Working days till today(<?php echo "$today"; ?>) : <?php echo"$totaltilltoday"; ?> <br><br>
 				<div class="more" id="events">
 					<span class="point"></span> Remaining working days till <?php echo"$lastworkingday"; ?>: <?php echo "$totalexpected"; ?><br><br>
 					<span class="point"></span> Total working days till <?php echo"$lastworkingday"; ?> : <?php echo"$grosstotal"; ?> <br><br>
