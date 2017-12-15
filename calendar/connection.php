@@ -11,7 +11,7 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "SELECT REASON,DATEE from DAY_STATUS_TBL";
+$sql = "SELECT REASON from DAY_STATUS_TBL";
 $result = mysqli_query($conn, $sql);
 $array = array();
 if (mysqli_num_rows($result) > 0) {

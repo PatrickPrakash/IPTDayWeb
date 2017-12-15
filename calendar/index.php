@@ -52,6 +52,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<script type="text/javascript" src="js/data.js"></script>
 				<!-- //js -->
 				<script type="text/javascript"> 
+                    var ev = <?php echo json_encode($array); ?>;
+                    console.log(ev);
+                    var events = {
+	                   '12-25-2016' : [{content: 'Christmas Day', repeat: 'YEARLY', allDay: true, endDate: '12-30-2017'}],
+	                   '01-01-2016' : [{content: 'New Year\'s', repeat: 'YEARLY', allDay: true, endDate: '12-31-2100'}],
+                       '12-05-2017' : [{content : 'Project Starts',  allDay: true,}],
+                       '12-11-2017' : [{content : 'Project Ends',  allDay: true,}],
+                       '12-12-2017' : [{content : JSON.stringify(ev[0]) , allDay: true,}]
+                                 }
+
 					$(function() {
 						function updateMonthYear() {
 							$( '#custom-month' ).html( $( '#calendar' ).calendario('getMonthName') );
