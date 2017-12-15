@@ -109,7 +109,7 @@ $conn->close();
 			<div class="events-text">
 			<span class="point"></span> Working days till today(<?php echo "$today"; ?>) : <?php echo"$totaltilltoday"; ?> <br><br>
 				<div class="more" id="events">
-					<span class="point"></span> Remaining working days till <?php echo"$lastworkingday"; ?>: <?php echo "$totalexpected"; ?><br><br>
+					<span class="point"></span> Remaining working days till <?php echo"$lastworkingday"; ?> : <?php echo "$totalexpected"; ?><br><br>
 					<span class="point"></span> Total working days till <?php echo"$lastworkingday"; ?> : <?php echo"$grosstotal"; ?> <br><br>
 					<span class="point"></span> Strikes : <?php echo"$strikedays"; ?> <br>
 						<button type="button" id="events-hide" class="showLink btn btn1" onclick="showHide('events');return false;"> Less </button>
