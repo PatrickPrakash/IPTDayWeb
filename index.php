@@ -16,6 +16,7 @@
 ?>
 <?php
 $today=date('Y-m-d');
+$day_n = date("l"); 
 $next_date =date('Y-m-d', strtotime($today .' +1 day'));
 $next_date1 =date('Y-m-d', strtotime($today .' +2 day'));
 $sql = "SELECT DAY FROM DAY_STATUS_TBL WHERE DATEE = '$today'";
@@ -95,6 +96,7 @@ $conn->close();
 		<div class="events-info  col-md-3 col-centered col-lg-3 col-xs-3  container">
 			<div class="events-main">
 				<div class="slide-text">
+				<h4><?php echo "$day_n"; ?></h4>
 				<h2><?php echo "$day"; ?></h2>
                     <ul class="list">
                             <li style="float: right"><?php echo "$today"; ?></li>
