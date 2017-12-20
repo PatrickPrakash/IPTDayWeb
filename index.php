@@ -105,7 +105,7 @@ $conn->close();
 				<h4><?php echo "$day_n"; ?></h4>
 				<h2><?php echo "$day"; ?></h2>
                     <ul class="list">
-                            <li style="float: right"><?php echo "$today"; ?></li>
+                            <li style="float: right">Date : <?php echo "$today"; ?></li>
                         </ul>
 			</div>
 <div class="events-text1"><ul>
