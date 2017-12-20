@@ -98,7 +98,6 @@ $lastworkingday =DateTime::createFromFormat('Y-m-d', $lastworkingday );
 $lastworkingday = $lastworkingday ->format('d-m-Y');
 $conn->close();
 ?>
-<h1 class="hh">Today's Day</h1>
 	<div class="main">
 		<div class="events-info  col-md-3 col-centered col-lg-3 col-xs-3  container">
 			<div class="events-main">
