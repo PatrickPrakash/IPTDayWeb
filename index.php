@@ -88,7 +88,14 @@ $sql="SELECT count(*) as total from DAY_STATUS_TBL  where datee >'$today' and da
     $row = $result->fetch_assoc();
     $totalexpected=$row ['total'];
 $grosstotal=$totaltilltoday+$totalexpected;
-
+$today= DateTime::createFromFormat('Y-m-d', $today);
+$today= $today->format('d-m-Y');
+$next_date= DateTime::createFromFormat('Y-m-d', $next_date);
+$next_date= $next_date->format('d-m-Y');
+$next_date1= DateTime::createFromFormat('Y-m-d', $next_date1);
+$next_date1= $next_date1->format('d-m-Y');
+$lastworkingday =DateTime::createFromFormat('Y-m-d', $lastworkingday );
+$lastworkingday = $lastworkingday ->format('d-m-Y');
 $conn->close();
 ?>
 <h1 class="hh">Today's Day</h1>
