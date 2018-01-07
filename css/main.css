@@ -74,6 +74,11 @@
     font-weight: 800;
 	line-height: 1em;
 }
+.slide-text h4 {
+    font-size: 2em;
+    color: #4e76fc;
+    line-height: 1em;
+}
 .events-text a {
     display: block;
     font-size: 1em;

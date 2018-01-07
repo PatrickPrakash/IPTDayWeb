@@ -16,6 +16,7 @@
 ?>
 <?php
 $today=date('Y-m-d');
+$day_n = date("l"); 
 $next_date =date('Y-m-d', strtotime($today .' +1 day'));
 $next_date1 =date('Y-m-d', strtotime($today .' +2 day'));
 $sql = "SELECT DAY FROM DAY_STATUS_TBL WHERE DATEE = '$today'";
@@ -101,18 +102,29 @@ $sql="SELECT count(*) as total from DAY_STATUS_TBL  where datee >'$today' and da
     $row = $result->fetch_assoc();
     $totalexpected=$row ['total'];
 $grosstotal=$totaltilltoday+$totalexpected;
-
+$today= DateTime::createFromFormat('Y-m-d', $today);
+$today= $today->format('d-m-Y');
+$next_date= DateTime::createFromFormat('Y-m-d', $next_date);
+$next_date= $next_date->format('d-m-Y');
+$next_date1= DateTime::createFromFormat('Y-m-d', $next_date1);
+$next_date1= $next_date1->format('d-m-Y');
+$lastworkingday =DateTime::createFromFormat('Y-m-d', $lastworkingday );
+$lastworkingday = $lastworkingday ->format('d-m-Y');
 $conn->close();
 ?>
-<h1 class="hh">Today's Day</h1>
 	<div class="main">
 		<div class="events-info  col-md-3 col-centered col-lg-3 col-xs-3  container">
 			<div class="events-main">
 				<div class="slide-text">
+				<h4><?php echo "$day_n"; ?></h4>
 				<h2><?php echo "$day"; ?></h2>
                 
                     <ul class="list">
+<<<<<<< HEAD
                             <li style="float: right;font-family:Gotham Rounded;"><?php echo "$today"; ?></li>
+=======
+                            <li style="float: right">Date : <?php echo "$today"; ?></li>
+>>>>>>> add0f129cc57e57cecc1b41934c8dd90b59c602c
                         </ul>
 			</div>
 <div class="events-text1"><ul>
